@@ -24,7 +24,7 @@ export default {
   computed: {
     dailyAudio() {
       const dayOfMonth = this.date.getDate();
-      this.audioSrc = `/proverbios/${dayOfMonth} Pista.mp3`;
+      this.audioSrc = `./public/proverbios/${dayOfMonth} Pista.mp3`;
     },
     formattedDate() {
       const options = {
