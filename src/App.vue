@@ -4,7 +4,7 @@
     <p>{{ formattedDate }}</p>
     <vue-plyr>
       <audio controls playsinline>
-        <source :src="audioSrc" type="audio/mp3">
+        <source :src="dailyAudio" type="audio/mp3">
         Your browser does not support the audio element.
       </audio>
     </vue-plyr>
@@ -18,12 +18,11 @@ export default {
   data() {
     return {
       date: dateInformation,
-      audioSrc:''
     };
   },
   computed: {
     dailyAudio() {
-      this.audioSrc = `./public/proverbios/${this.date.getDate()} Pista.mp3`;
+      return `./proverbios/${this.date.getDate()} Pista.mp3`;
     },
     formattedDate() {
       const options = {
