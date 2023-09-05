@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Proverbio del Día</h1>
+    <h2>Proverbio Capítulo {{ date.getDate() }}</h2>
     <p>{{ formattedDate }}</p>
     <vue-plyr>
       <audio controls playsinline>
