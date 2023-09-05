@@ -23,8 +23,7 @@ export default {
   },
   computed: {
     dailyAudio() {
-      const dayOfMonth = this.date.getDate();
-      this.audioSrc = `./public/proverbios/${dayOfMonth} Pista.mp3`;
+      this.audioSrc = `./public/proverbios/${this.date.getDate()} Pista.mp3`;
     },
     formattedDate() {
       const options = {
